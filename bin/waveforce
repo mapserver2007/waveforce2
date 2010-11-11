@@ -1,0 +1,20 @@
+#!/usr/bin/ruby
+# -*- coding: utf-8 -*-
+$: << File.dirname(File.expand_path($PROGRAM_NAME)) + "/../lib"
+require 'waveforce'
+require 'waveforce/notify'
+require 'optparse'
+
+config = {}
+opt = OptionParser.new
+opt.on('-p', '--password PASSWORD') {|v| config[:passwd] = v}
+opt.on('-a', '--address ADDRESS') {|v| config[:host] = v}
+opt.on('-l', '--log LOG') {|v| config[:log] = v}
+opt.on('-d', '--debug') {|boolean| config[:debug] = boolean}
+opt.on('-s', '--store STORE') {|v| config[:db] = v}
+opt.on('-r', '--response RESPONSE') {|v| config[:response_border] = v.to_i}
+opt.on('-i', '--icon ICON') {|v| config[:icon] = v}
+opt.on('-C', '--config CONFIG') {|v| config[:config] = v}
+opt.parse!
+
+WaveForce.notify(config)

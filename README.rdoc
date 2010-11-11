@@ -1,0 +1,68 @@
+= waveforce
+
+waveforce is notify "matsuri" for terrestrial broadcasting.
+
+== Installation
+
+Following software are required (for windows):
+
+ * Growl for windows(http://www.growlforwindows.com/gfw/default.aspx)
+
+Generate and install the gem, execute a command.
+
+  rake gemspec
+  gem build waveforce.gemspec
+
+=== Gem Installation
+
+  gem install waveforce
+
+== How to use
+
+The available option are:
+
+  -h # help
+  -a # set the hostname or IP address for notify it.
+  -p # set the growl password.
+  -l # output log file path.
+  -d # show debug message.
+  -s # output database file path.
+  -r # the threshold for notify.
+  -i # display icon url or file path.
+  -C # config file path. (Please refer to example/config.yml)
+
+== Synopsis
+
+execute command example:
+
+  waveforce -a localhost -p password -l c:/log -s c:/db -r 100
+  waveforce -C c:/config.yml
+
+== Copyright
+
+* Author::    mapserver2007(Ryuichi TANAKA) <mapserver2007@gmail.com>
+* Copyright:: Copyright (c) 2010 mapserver2007
+
+== License
+
+  (The MIT License)
+
+  Copyright (c) 2010 mapserver2007
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  THE SOFTWARE.
