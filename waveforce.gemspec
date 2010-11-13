@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["mapserver2007"]
-  s.date = %q{2010-11-10}
+  s.date = %q{2010-11-13}
   s.default_executable = %q{waveforce}
   s.description = %q{waveforce. notify matsuri for terrestrial broadcasting.}
   s.email = %q{mapserver2007@gmail.com}
@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://github.com/mapserver2007/waveforce2}
   s.rdoc_options = ["--title", "waveforce documentation", "--charset", "utf-8", "--opname", "index.html", "--line-numbers", "--main", "README.rdoc", "--inline-source", "--exclude", "^(examples|extras)/"]
   s.require_paths = ["lib"]
-  s.rubyforge_project = %q{http://github.com/mapserver2007/waveforce2}
+  s.rubyforge_project = %q{waveforce2}
   s.rubygems_version = %q{1.3.7}
   s.summary = %q{waveforce. notify matsuri for terrestrial broadcasting.}
   s.test_files = ["spec/waveforce_helper.rb", "spec/waveforce_spec.rb"]

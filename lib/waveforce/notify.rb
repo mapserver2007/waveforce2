@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 require 'waveforce/store'
+require 'ruby_gntp'
 
 module WaveForce
   class Notify

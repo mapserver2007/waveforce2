@@ -1,6 +1,7 @@
 require 'rspec'
 require File.dirname(__FILE__) + "/../lib/waveforce"
 require File.dirname(__FILE__) + "/../lib/waveforce/notify"
+
 module WaveForce
   class Rspec
     DUMMY_VALUE = "xxxxxxxxxx"

@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 require 'waveforce/crawler'
 require 'waveforce/utils'
-require 'ruby_gntp'
 
 module WaveForce
   VERSION = '0.2.0'
