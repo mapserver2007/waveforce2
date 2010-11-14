@@ -1,13 +1,14 @@
 require 'rspec'
 require File.dirname(__FILE__) + "/../lib/waveforce"
 require File.dirname(__FILE__) + "/../lib/waveforce/notify"
+require File.dirname(__FILE__) + "/../lib/waveforce/utils"
 
 module WaveForce
   class Rspec
     DUMMY_VALUE = "xxxxxxxxxx"
     # 共通パラメータ
-    def params
-      {
+    def params2
+       {
         :host => "localhost",
         :passwd => "paranoia",
         :log => "e:/tmp",
@@ -17,6 +18,22 @@ module WaveForce
         :icon => nil,
         :config => nil
       }
+    end
+
+    def method_missing(name, *args)
+      attr = name.to_s
+      if @attr == "params"
+        config = Utils.load(File.dirname(__FILE__) + "/spec_config.yml")
+        @attr = nil
+        if attr == "common" || attr == "other"
+          config[attr.to_sym].inject({}){|r, entry| r[entry[0].to_sym] = entry[1]; r}
+        else
+          config[:common][attr] || config[:other][attr]
+        end
+      elsif attr == "params"
+        @attr = attr
+        self
+      end
     end
 
     # テスト用に必ず通知レベルWarningで返すようにメソッドを書き換える

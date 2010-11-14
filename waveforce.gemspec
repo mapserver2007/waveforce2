@@ -6,13 +6,13 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["mapserver2007"]
-  s.date = %q{2010-11-13}
+  s.date = %q{2010-11-14}
   s.default_executable = %q{waveforce}
   s.description = %q{waveforce. notify matsuri for terrestrial broadcasting.}
   s.email = %q{mapserver2007@gmail.com}
   s.executables = ["waveforce"]
   s.extra_rdoc_files = ["README.rdoc", "ChangeLog"]
-  s.files = ["README.rdoc", "ChangeLog", "Rakefile", "bin/waveforce", "spec/waveforce_helper.rb", "spec/waveforce_spec.rb", "lib/waveforce", "lib/waveforce/crawler.rb", "lib/waveforce/notify.rb", "lib/waveforce/store.rb", "lib/waveforce/utils.rb", "lib/waveforce.rb"]
+  s.files = ["README.rdoc", "ChangeLog", "Rakefile", "bin/waveforce", "spec/spec_config.yml", "spec/waveforce_helper.rb", "spec/waveforce_spec.rb", "lib/waveforce", "lib/waveforce/crawler.rb", "lib/waveforce/notify.rb", "lib/waveforce/store.rb", "lib/waveforce/utils.rb", "lib/waveforce.rb"]
   s.homepage = %q{http://github.com/mapserver2007/waveforce2}
   s.rdoc_options = ["--title", "waveforce documentation", "--charset", "utf-8", "--opname", "index.html", "--line-numbers", "--main", "README.rdoc", "--inline-source", "--exclude", "^(examples|extras)/"]
   s.require_paths = ["lib"]
