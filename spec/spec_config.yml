@@ -1,13 +1,13 @@
 common:
-  host: your host
-  passwd: your growl password
-  log: /path/to/log
-  db: /path/to/dbfile
+  host: localhost
+  passwd: paranoia
+  log: e:/tmp
+  db: e:/tmp
   response_border: number of response border
-  icon: url or path
+  icon: http://img.tweetimag.es/i/mapserver2007
 
 other:
   dummy_value: xxxxxxxxxx
-  config: /path/to/config.yml
+  config: e:/tmp/config.yml
   dummy_url: http://xxxxxxxxxxxxxxxxxxxxxx/xxx.png
   timeout: 0.00000000001

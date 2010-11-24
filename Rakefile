@@ -19,7 +19,7 @@ DESCRIPTION       = "waveforce. notify matsuri for terrestrial broadcasting."
 RUBYFORGE_PROJECT = "waveforce2"
 HOMEPATH          = "http://github.com/#{AUTHOR}/#{PROJECT_NAME}"
 BIN_FILES         = %w( waveforce )
-VERS              = '0.2.0'
+VERS              = '0.2.1'
 REV = File.read(".svn/entries")[/committed-rev="(d+)"/, 1] rescue nil
 CLEAN.include ['**/.*.sw?', '*.gem', '.config']
 RDOC_OPTS = [

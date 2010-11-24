@@ -5,21 +5,6 @@ require File.dirname(__FILE__) + "/../lib/waveforce/utils"
 
 module WaveForce
   class Rspec
-    DUMMY_VALUE = "xxxxxxxxxx"
-    # 共通パラメータ
-    def params2
-       {
-        :host => "localhost",
-        :passwd => "paranoia",
-        :log => "e:/tmp",
-        :debug => false,
-        :db => "e:/tmp",
-        :response_border => 10,
-        :icon => nil,
-        :config => nil
-      }
-    end
-
     def method_missing(name, *args)
       attr = name.to_s
       if @attr == "params"

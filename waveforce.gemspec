@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{waveforce}
-  s.version = "0.2.0"
+  s.version = "0.2.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["mapserver2007"]
-  s.date = %q{2010-11-14}
+  s.date = %q{2010-11-24}
   s.default_executable = %q{waveforce}
   s.description = %q{waveforce. notify matsuri for terrestrial broadcasting.}
   s.email = %q{mapserver2007@gmail.com}

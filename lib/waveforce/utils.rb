@@ -12,23 +12,6 @@ module WaveForce
         !!(FileTest::directory?(e) rescue nil)
       end
 
-      def create_dir(parent, child)
-        # 親ディレクトリが存在しない場合
-        return nil unless directory?(parent)
-        path = Pathname.new(parent + "/" + child)
-        pathname = path.cleanpath
-        # すでにディレクトリがある場合
-        return nil if directory?(pathname)
-        # ディレクトリの生成
-        begin
-          Dir::mkdir(pathname)
-          pathname.cleanpath
-        rescue => e
-          puts e.message
-          nil
-        end
-      end
-
       def os_encoding
         RUBY_PLATFORM.downcase =~ /mswin(?!ce)|mingw|cygwin|bccwin/ ?
           "Windows-31J" : "UTF-8"

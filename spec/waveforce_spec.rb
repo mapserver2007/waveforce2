@@ -7,7 +7,6 @@ describe WaveForce, 'が実行する処理' do
     @rspec.rewrite_nofiable
     @rspec.add_log_inspector
     @params = @rspec.params.common
-    @dummy = @rspec.params.dummy_value
   end
 
   after do

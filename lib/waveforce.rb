@@ -3,7 +3,7 @@ require 'waveforce/crawler'
 require 'waveforce/utils'
 
 module WaveForce
-  VERSION = '0.2.0'
+  VERSION = '0.2.1'
   APP_NAME = 'waveforce2'
   CRAWLE_URL = "http://www.tv2ch.info/"
   CRAWLE_TIMEOUT = 3
